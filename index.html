@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div class="main-container">
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="Enter City Name">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="error">
+                <img src="images/404.png" alt="">
+                <h1>City Not Found !!</h1>
+            </div>
+            <div class="info">
+            <div class="weather">
+                <img src="./images/clear.png" id="image" alt="">
+                <h1 class="temp"></h1>
+                <h2 class="city"></h2>
+            </div>
+            <div class="weather-details">
+                <div class="col">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="Humidity-info">
+                        <h3>Humidity</h3>
+                        <p class="humidity"></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="wind-info">
+                        <h3>Wind</h3>
+                        <p class="wind"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
